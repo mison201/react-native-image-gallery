@@ -162,12 +162,15 @@ export class ImageCell extends React.Component<ImageCellProps, ImageCellState> {
       source,
       theme
     } = this.props;
-    const {imageGalleryImageColor = '#f1f1f1'} = theme;
+    const imageGalleryImageColor = "#fff";
     const imageStyle = {
       backgroundColor: imageGalleryImageColor,
       height: imageHeight,
       opacity: this.state.opacity,
-      width: imageWidth
+      width: imageWidth - 10,
+      margin: 5,
+      borderRadius: 5,
+      overflow: "hidden"
     };
 
     return (
